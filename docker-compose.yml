@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  oracle:
+    image: truevoly/oracle-12c
+    volumes:
+      - "/path/to/your/local/computer/oracle_data:/u01/app/oracle"
+    ports:
+      - "8080:8080"
+      - "1521:1521"
